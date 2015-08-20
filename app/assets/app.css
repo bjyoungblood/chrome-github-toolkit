@@ -1,0 +1,69 @@
+.convert--wrapper {
+  width: 100%;
+}
+
+.text__warn {
+  color: #F44336;
+}
+
+.branch-warning {
+  position: relative;
+  top: -13px;
+  padding-left: 5px;
+
+  font-size: 90%;
+}
+
+.branch-list--container {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.branch-list--container__warn {
+  border-bottom: 2px solid #F44336;
+}
+
+.branch-list--container > .branch-list--wrapper {
+  max-height: 0px;
+  overflow-y: scroll;
+
+  transition-duration: 0.5s;
+  transition-property: max-height;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.branch-list--container__open {
+  border-bottom: none;
+}
+
+.branch-list--container__open > .branch-list--wrapper {
+  max-height: 218px;
+}
+
+.branch-list--container .branch-list--title {
+  cursor: pointer;
+  line-height: 48px;
+  padding-left: 8px;
+  text-overflow: ellipsis;
+}
+
+.branch-list {
+  list-style-type: none;
+  margin-top: 0px;
+  -webkit-padding-start: 0;
+}
+
+.branch-list--item {
+  cursor: pointer;
+  line-height: 48px;
+  padding-left: 16px;
+  text-overflow: ellipsis;
+}
+
+.branch-list--item:hover {
+  background-color: #e0e0e0;
+}
+
+.mdl-card.options-card {
+  width: 100%;
+}

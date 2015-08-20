@@ -1,0 +1,16 @@
+doctype html
+
+html
+  head
+    meta(charset='UTF-8')
+    title Github Toolkit
+
+    style.
+      body { margin: 0px; padding: 0px }
+
+    if env != 'prod'
+      script(src='/js/reactdevtool.js')
+    script(src=env == 'prod' ? '/js/popup.bundle.js' : 'http://localhost:3000/js/popup.bundle.js')
+
+  body(style="height:500px;width:400px;")
+    #root()
