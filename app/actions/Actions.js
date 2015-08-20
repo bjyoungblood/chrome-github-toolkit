@@ -155,15 +155,14 @@ export function convertIssue(token, owner, repo, issue, base, head) {
     })
       .then((pullRequest) => {
         dispatch(convertDone(pullRequest));
-        setTimeout(function() {
-          chrome.tabs.query({ currentWindow: true, active: true }, (tabs) => {
-            if (! tabs[0]) {
-              return;
-            }
 
-            chrome.tabs.reload(tabs[0].id);
-          });
-        }, 1500);
+        chrome.tabs.query({ currentWindow: true, active: true }, (tabs) => {
+          if (! tabs[0]) {
+            return;
+          }
+
+          chrome.tabs.reload(tabs[0].id);
+        });
       })
       .error((err) => {
         try {
