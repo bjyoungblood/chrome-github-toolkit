@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.1",
   "name": "github-toolkit",
   "manifest_version": 2,
   "description": "Convert Github issues into pull requests",
@@ -18,5 +18,5 @@
     "page": "background.html"
   },
   "permissions": [ "tabs", "identity", "storage", "https://github.com/*", "https://api.github.com/*" ],
-  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src: https://api.github.com https://github.com; style-src * 'unsafe-inline'; font-src * 'unsafe-inline'; img-src 'self' data:;"
+  "content_security_policy": "default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src https://api.github.com https://github.com; style-src * 'unsafe-inline'; font-src * 'unsafe-inline'; img-src 'self' data:;"
 }
