@@ -1,6 +1,6 @@
 {
   "name": "chrome-github-toolkit",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Github Toolkit",
   "scripts": {
     "dev": "./node_modules/gulp/bin/gulp.js",
